@@ -14,12 +14,8 @@ start_time = 0
 def on_message(ws, message):
     global was_time
     global liq_df
-    global liq_df_15m
-    global liq_df_4h
 
     if os.path.exists('data/liq.csv') == False:     liq_df     = liq_df[0:0]
-    if os.path.exists('data/liq_15m.csv') == False: liq_df_15m = liq_df_15m[0:0]
-    if os.path.exists('data/liq_4h.csv') == False:  liq_df_4h  = liq_df_4h[0:0]
 
     response = json.loads(message)
     df = pd.json_normalize(response)
@@ -30,12 +26,8 @@ def on_message(ws, message):
     if was_time != now_time:
         was_time = now_time
         liq_df.to_csv("data/liq.csv", sep=',', mode='a', header=not os.path.exists("data/liq.csv"), index=False)
-        liq_df_15m.to_csv("data/liq_15m.csv", sep=',', mode='a', header=not os.path.exists("data/liq_15m.csv"), index=False)
-        liq_df_4h.to_csv("data/liq_4h.csv", sep=',', mode='a', header=not os.path.exists("data/liq_4h.csv"), index=False)
 
         liq_df     = liq_df[0:0]
-        liq_df_15m = liq_df_15m[0:0]
-        liq_df_4h  = liq_df_4h[0:0]
         print(' - Liquidations OK')
 # ------------------------------------------
 def on_error(ws, error):

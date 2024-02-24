@@ -53,10 +53,5 @@ M_array_7 = ['OPUSDT', 'LEVERUSDT', 'STGUSDT', 'GMXUSDT', 'POLYXUSDT', 'APTUSDT'
 
 
 total_df     = pd.DataFrame({'coin': pd.Series(dtype='str'), 'price': pd.Series(dtype='float'), 'amount': pd.Series(dtype='float'), 'buyer': pd.Series(dtype='boolean')})
-total_df_15m = pd.DataFrame({'coin': pd.Series(dtype='str'), 'price': pd.Series(dtype='float'), 'amount': pd.Series(dtype='float'), 'buyer': pd.Series(dtype='boolean')})
-total_df_4h  = pd.DataFrame({'coin': pd.Series(dtype='str'), 'price': pd.Series(dtype='float'), 'amount': pd.Series(dtype='float'), 'buyer': pd.Series(dtype='boolean')})
-
 
 liq_df = pd.DataFrame({'coin': pd.Series(dtype='str'), 'price': pd.Series(dtype='float'), 'amount': pd.Series(dtype='float'), 'type': pd.Series(dtype='str')})
-liq_df_15m = pd.DataFrame({'coin': pd.Series(dtype='str'), 'price': pd.Series(dtype='float'), 'amount': pd.Series(dtype='float'), 'type': pd.Series(dtype='str')})
-liq_df_4h = pd.DataFrame({'coin': pd.Series(dtype='str'), 'price': pd.Series(dtype='float'), 'amount': pd.Series(dtype='float'), 'type': pd.Series(dtype='str')})

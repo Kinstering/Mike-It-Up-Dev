@@ -18,7 +18,7 @@ prev_v_8_a = 0
 prev_v_8_b = 0
 prev_trades_v_usdt = 0
 
-TelebotToken = ""
+TelebotToken = "6903848728:AAGtli6pRdoKmEcoVhk1ngPzzcKsMPU5YZY"
 TeleChatID_Andy = ""
 TeleChatID_Mike = ""
 # ------------------------------------------
@@ -198,7 +198,7 @@ async def send_report(df_all, now_time):
     #await send(msg=Mtext, chat_id=TeleChatID_Andy)
     # await send(msg=Mtext, chat_id=TeleChatID_Mike)
 
-    await send(msg=Mtext, chat_id="")
+    await send(msg=Mtext, chat_id="-1002011351786")
 
 
     Mtext = '____only for andy ________' + '\r\n'
@@ -257,30 +257,7 @@ async def main():
                 shutil.copyfile('data/'+n1+'.csv', 'data/'+n2+'.csv')
               try:     os.remove('data/'+n1+'.csv')
               except:  print('No file:'+n1)
-              # --------- temporary delete 15m and 4h files
-              n1 = "trades_15m_"+str(i)
-              try:     os.remove('data/'+n1+'.csv')
-              except:  print('No file:'+n1)
-
-              n1 = "trades_4h_"+str(i)
-              try:     os.remove('data/'+n1+'.csv')
-              except:  print('No file:'+n1)
-
-              n1 = "asks_15m_"+str(i)
-              try:     os.remove('data/'+n1+'.csv')
-              except:  print('No file:'+n1)
-
-              n1 = "asks_4h_"+str(i)
-              try:     os.remove('data/'+n1+'.csv')
-              except:  print('No file:'+n1)
-
-              n1 = "bids_15m_"+str(i)
-              try:     os.remove('data/'+n1+'.csv')
-              except:  print('No file:'+n1)
-
-              n1 = "bids_4h_"+str(i)
-              try:     os.remove('data/'+n1+'.csv')
-              except:  print('No file:'+n1)
+              
 
 
             # check all data points
