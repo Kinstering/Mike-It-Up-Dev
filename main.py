@@ -12,6 +12,7 @@ processes = {
     "a5": "asks_bids_5.py",
     "a6": "asks_bids_6.py",
     "a7": "asks_bids_7.py",
+    "a8": "asks_bids_8.py",
     "t1": "trades_1.py",
     "t2": "trades_2.py",
     "t3": "trades_3.py",
@@ -19,6 +20,7 @@ processes = {
     "t5": "trades_5.py",
     "t6": "trades_6.py",
     "t7": "trades_7.py",
+    "t8": "trades_8.py",
 }
 
 running_processes = {}

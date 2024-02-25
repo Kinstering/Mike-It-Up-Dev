@@ -51,6 +51,8 @@ M_array_7 = ['OPUSDT', 'LEVERUSDT', 'STGUSDT', 'GMXUSDT', 'POLYXUSDT', 'APTUSDT'
              'LOOMUSDT', 'OAXUSDT', 'RDNTUSDT', 'WBTCUSDT', 'EDUUSDT', 'SUIUSDT', 'AERGOUSDT', 'ASTUSDT',
              'SNTUSDT', 'COMBOUSDT', 'MAVUSDT', 'PENDLEUSDT', 'ARKMUSDT', 'WBETHUSDT', 'WLDUSDT', 'FDUSDUSDT', 'SEIUSDT', 'CYBERUSDT']
 
+M_array_8 = ['SHIBUSDT', 'XECUSDT', 'LUNCUSDT', 'PEPEUSDT', 'FLOKIUSDT', 'BONKUSDT']
+
 
 total_df     = pd.DataFrame({'coin': pd.Series(dtype='str'), 'price': pd.Series(dtype='float'), 'amount': pd.Series(dtype='float'), 'buyer': pd.Series(dtype='boolean')})
 

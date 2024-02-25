@@ -16,7 +16,7 @@ total_df  = pd.DataFrame({'time': pd.Series(dtype='int'),
 d = datetime.today() - timedelta(days=datetime.now().isoweekday())
 date_to = int(d.replace(hour=23, minute=59, second=59).timestamp())
 d_to  = d.date()
-coins_list = [*M_array_1, *M_array_2, *M_array_3, *M_array_4, *M_array_5, *M_array_6, *M_array_7]
+coins_list = [*M_array_1, *M_array_2, *M_array_3, *M_array_4, *M_array_5, *M_array_6, *M_array_7, *M_array_8]
 clusters_max = pd.read_csv("data/clusters_max.csv",  sep=',')
 # ----------------------------------
 def get_max_cluster(time_, total_df):
